@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:floralwhite;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.card{
+    max-width: 800px;
+    background-color:black;
+    border-radius: 5px;
+    box-shadow: 20px 30px 30px black;
+    display: flex;
+    padding: 15px;
+    margin: 0 1.5rem;
+    border: 2px solid rgb(219, 137, 150);
+}
+
+.user-info{
+    margin-left: 2rem;
+}
+
+.user-info h2{
+    margin-top: 0;
+}
+.user-info ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.user-info ul li{
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+#search{
+    background-color: silver;
+    height: 30px;
+    width: 500px;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+
+/* image */
+.avatar{
+    border-radius: 50%;
+    border: 5px solid rgb(219, 137, 150);
+    height: 150px;
+    width: 150px;
+    display: flex;
+   margin: 0 auto;
+}
+
+.repo{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 3px 4px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 500px){
+    .card{
+        max-width: 400px;
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
